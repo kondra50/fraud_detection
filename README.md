@@ -11,13 +11,27 @@
 
 ## Project Overview
 
-Welcome to the Convolutional Neural Networks (CNN) project in the AI Nanodegree! In this project, you will learn how to build a pipeline that can be used within a web or mobile app to process real-world, user-supplied images.  Given an image of a dog, your algorithm will identify an estimate of the canine’s breed.  If supplied an image of a human, the code will identify the resembling dog breed.  
-
-![Sample Output][image1]
-
-Along with exploring state-of-the-art CNN models for classification and localization, you will make important design decisions about the user experience for your app.  Our goal is that by completing this lab, you understand the challenges involved in piecing together a series of models designed to perform various tasks in a data processing pipeline.  Each model has its strengths and weaknesses, and engineering a real-world application often involves solving many problems without a perfect answer.  Your imperfect solution will nonetheless create a fun user experience!
+In this section, we'll look at a credit card fraud detection dataset, and build a binary classification model that can identify transactions as either fraudulent or valid, based on provided, historical data. In a 2016 study, it was estimated that credit card fraud was responsible for over 20 billion dollars in loss, worldwide. Accurately detecting cases of fraud is an ongoing area of research.  
 
 
+
+The payment fraud data set (Dal Pozzolo et al. 2015) was downloaded from Kaggle. This has features and labels for thousands of credit card transactions, each of which is labeled as fraudulent or valid. In this notebook, we'd like to train a model based on the features of these transactions so that we can predict risky or fraudulent transactions in the future.
+Binary Classification
+Since we have true labels to aim for, we'll take a supervised learning approach and train a binary classifier to sort data into one of our two transaction classes: fraudulent or valid. We'll train a model on training data and see how well it generalizes on some test data.
+
+The notebook will be broken down into a few steps:
+
+Loading and exploring the data
+Splitting the data into train/test sets
+Defining and training a LinearLearner, binary classifier
+Defining and training a LinearLearner, binary classifier
+Making improvements on the model
+Evaluating and comparing model test performance
+Making Improvements
+A lot of this notebook will focus on making improvements, as discussed in this SageMaker blog post. Specifically, we'll address techniques for:
+
+Tuning a model's hyperparameters and aiming for a specific metric, such as high recall or precision.
+Managing class imbalance, which is when we have many more training examples in one class than another (in this case, many more valid transactions than fraudulent).
 ## Project Instructions
 
 ### Instructions
